@@ -1,0 +1,6 @@
+{
+  "name": "Vibely",
+  "description": "Futuristic AI conversion engine turning rough idea seeds into highly structured, optimized coding blueprints and prompt DNA for Cursor, Lovable, Bolt, and more.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
