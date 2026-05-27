@@ -495,11 +495,11 @@ Generated autonomously by Vibely AI.`;
                 filteredProjects.map((prj) => {
                   const isActive = currentGeneration?.idea === prj.generation.idea;
                   return (
-                    <button
+                    <div
                       key={prj.id}
                       id={`sidebar-saved-idea-${prj.id}`}
                       onClick={() => handleLoadPrj(prj)}
-                      className={`group w-full p-3 rounded-xl text-left transition-all flex items-start justify-between border ${
+                      className={`group w-full p-3 rounded-xl text-left transition-all flex items-start justify-between border cursor-pointer ${
                         isActive
                           ? "bg-zinc-100/90 border-[#dedee2] shadow-sm"
                           : "border-transparent bg-transparent hover:bg-zinc-50"
@@ -521,7 +521,7 @@ Generated autonomously by Vibely AI.`;
                       >
                         <Trash2 className="w-3.5 h-3.5" />
                       </button>
-                    </button>
+                    </div>
                   );
                 })
               ) : (
